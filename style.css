@@ -1,0 +1,45 @@
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+video, canvas {
+    border: 2px solid #333;
+    background-color: #222;
+    margin: 10px;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+button, input, select {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, input:hover, select:hover {
+    background-color: #444;
+}
+
+input[type="file"] {
+    display: inline-block;
+}

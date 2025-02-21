@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Face to Lines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Face to Lines Converter</h1>
+        <video id="video" width="640" height="480" autoplay></video>
+        <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+        <canvas id="resultCanvas" width="640" height="480"></canvas>
+        <div class="controls">
+            <button id="capture">Capture Photo</button>
+            <input type="file" id="upload" accept="image/*" placeholder="Upload Photo">
+            <input type="file" id="logoUpload" accept="image/*" placeholder="Upload Logo">
+            <select id="resolution">
+                <option value="1:1">1:1 (Square)</option>
+                <option value="4:3">4:3 (Standard)</option>
+                <option value="16:9">16:9 (Widescreen)</option>
+            </select>
+            <button id="download">Download Result</button>
+        </div>
+    </div>
+    <script src="https://docs.opencv.org/4.5.2/opencv.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
